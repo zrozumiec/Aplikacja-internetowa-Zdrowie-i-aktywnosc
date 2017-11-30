@@ -3,52 +3,103 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Aplikacja_Internetowa_Zdrowie_Aktywnosc</title>
-
+    <title>@ViewData["Title"] - Zadbaj o siebie</title>
+    <link href="~/images/Index/logo.png" rel="icon"/>
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--==========================
+    Header
+    ============================-->
+    <header id="header">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Aplikacja_Internetowa_Zdrowie_Aktywnosc</a>
+            <div id="logo" class="pull-left">
+
+                <a href="#hero">
+                    <img src="~/images/Index/logo.png" />
+                </a>
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <!--<h1><a href="#hero">Regna</a></h1>-->
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#hero">Strona główna</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#services">Co oferujemy?</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Kalendarz">Kalendarz</a></li>
                 </ul>
+
+            </nav><!-- #nav-menu-container -->
+            <nav id="nav-menu-container2">
+                <ul class="nav-menu">
+                    <li><a href="#zalog">Zaloguj</a></li>
+                    <li><a href="#zarej">Zarejstruj</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- #header -->
+    <!--==========================
+      Hero Section
+    ============================-->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Witaj w aplikacji <font color="#2dc997"> LIFT IT</font></h1>
+            <h2>Z nami zadbasz o własne ciało oraz zdrowie</h2>
+            <a href="#about" class="btn-get-started">Rozpocznij :]</a>
+            <h1 id="liczbaTapet"></h1>
+
+        </div>
+    </section><!-- #hero -->
+
+    @RenderBody()
+
+    <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - Aplikacja_Internetowa_Zdrowie_Aktywnosc</p>
-        </footer>
-    </div>
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+                -->
+                Bootstrap Templates by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+                <p>&copy; 2017 - Lift It KC</p>
+            </div>
+        </div>
+    </footer><!-- #footer -->
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/Index/index.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/counterup.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/easing.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/hoverIntent.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/superfish.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/waypoints.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/wow.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/fakeVisitCounter.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/changeBack.min.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
@@ -63,7 +114,15 @@
                 crossorigin="anonymous"
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/index.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/counterup.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/easing.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/hoverIntent.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/superfish.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/waypoints.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/wow.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/fakeVisitCounter.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/changeBack.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)

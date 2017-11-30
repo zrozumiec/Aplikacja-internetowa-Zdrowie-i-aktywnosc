@@ -1,0 +1,12 @@
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=Aplikacja-Internetowa-Zdrowie-Aktywnosc
+--content-root=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\Home\Index.cshtml
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\Home\Kalendarz.cshtml
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\Shared\Error.cshtml
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\Shared\_Layout.cshtml
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\Shared\_Layout2.cshtml
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\_ViewImports.cshtml
+--file=C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Views\_ViewStart.cshtml

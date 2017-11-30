@@ -12,19 +12,14 @@ namespace Aplikacja_Internetowa_Zdrowie_Aktywnosc.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Kalendarz()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "";
 
             return View();
         }

@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace Aplikacja_Internetowa_Zdrowie_Aktywnosc
 {
@@ -38,6 +41,20 @@ namespace Aplikacja_Internetowa_Zdrowie_Aktywnosc
             }
 
             app.UseStaticFiles();
+
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+            Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "images")),
+                RequestPath = new PathString("/MyImages")
+            });
+
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+            Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "js", "Index")),
+                RequestPath = new PathString("/MyS")
+            });
 
             app.UseMvc(routes =>
             {

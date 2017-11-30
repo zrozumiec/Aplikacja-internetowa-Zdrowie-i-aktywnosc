@@ -1,0 +1,11 @@
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\bin\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.deps.json
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\bin\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.runtimeconfig.json
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\bin\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.runtimeconfig.dev.json
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\bin\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.dll
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\bin\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.pdb
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\obj\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\obj\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.csproj.CoreCompileInputs.cache
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\obj\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.AssemblyInfoInputs.cache
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\obj\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.AssemblyInfo.cs
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\obj\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.dll
+C:\Users\Kamil\Documents\Visual Studio 2017\Projects\Aplikacja-Internetowa-Zdrowie-Aktywnosc\Aplikacja-Internetowa-Zdrowie-Aktywnosc\obj\Release\netcoreapp2.0\Aplikacja-Internetowa-Zdrowie-Aktywnosc.pdb
