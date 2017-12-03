@@ -6,6 +6,6 @@ Ten plik jest wykorzystywany przez proces publikowania/pakowania projektu sieci 
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnqSO3+GPwkme7SQx9+vNGgAAAAACAAAAAAAQZgAAAAEAACAAAAB+NWV+abYv/k+hRjXXDE6TXyGwnDco10KorzCZ3kun5QAAAAAOgAAAAAIAACAAAAAY3Lxc1FPWT3U+49UWiddZ3PvM3+MDbaFxCJedREqsboAAAACSQ3EKRhDm9/09wFVa3AZPFS4pPZwjqmDL+kDAkcSVUIhGfksdAIHvbiCUN/BcbXlVyvO5Qd37ZfF81pj8ofVJEU3Wcowt9Ob3xQtwDQqR0zWW+Abhn1hMXmDkRlV59mBGTNCRx4MFQoG66upOujH8qXx7NOsNnQMb60FBCcDgiUAAAAAy3lv0muA/TORBp4U1Ft8zG+Vlyz6Nza9+9wPYlMY1GhToZ2taD3YpLL3QuhsZrT0JOjop/9chrThk7zqw+B+Y</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnqSO3+GPwkme7SQx9+vNGgAAAAACAAAAAAAQZgAAAAEAACAAAAALZzhC3wCusqvbDjbnXe+HaItiOD2GTO0SkbTtcDmMlwAAAAAOgAAAAAIAACAAAABciyHrgiW33NKPpMO+gk9gnuRalcHoybDJV5+ylNiPdYAAAAAxTG9Fl3KSQ9SpXVK/0GQcEf0p9VRYKqQskJHFGS0j29S7Z5Uan6gJ67FTkSOJftE/l04TKO5/cw0NWWk/cnCMijJjIAn99sqzk2dOyeGFwsC+ameA8syYiTEB0ep/zA2sjknRnSJQKCfyaW/teq/Z+q8eh1E4XSyetpiSo7uChkAAAACcucF5gcffWgb//ohh1C0pPTVm66jmFS8a6d1VIfhIgrhrOSRS5Y/C4SxIC1Z14iDWRdEg9ex93UMfGqWqHXVy</EncryptedPassword>
   </PropertyGroup>
 </Project>
