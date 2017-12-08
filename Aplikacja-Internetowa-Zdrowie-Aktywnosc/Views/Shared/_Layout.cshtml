@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Zadbaj o siebie</title>
-    <link href="~/images/Index/logo.png" rel="icon"/>
+    <link href="~/images/Index/logo.png" rel="icon" />
+    <link href="~/css/Index/loginRegister.css" rel="stylesheet" />
+    <link href="~/css/Index/overlay.css" rel="stylesheet" />
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     </environment>
@@ -41,8 +43,8 @@
             </nav><!-- #nav-menu-container -->
             <nav id="nav-menu-container2">
                 <ul class="nav-menu">
-                    <li><a href="#zalog">Zaloguj</a></li>
-                    <li><a href="#zarej">Zarejstruj</a></li>
+                    <li><a onclick="showLogin()" style="cursor:pointer">Zaloguj</a></li>
+                    <li><a onclick="showRegister()" style="cursor:pointer">Zarejstruj</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,12 +54,101 @@
     ============================-->
     <section id="hero">
         <div class="hero-container">
-            <h1>Witaj w aplikacji <font color="#2dc997"> LIFT IT</font></h1>
-            <h2>Z nami zadbasz o własne ciało oraz zdrowie</h2>
-            <a href="#about" class="btn-get-started">Rozpocznij :]</a>
-            <h1 id="liczbaTapet"></h1>
+            <div>
+                <div class="container modal" id="register">
+                    <div class="row main">
+                        <div class="main-login main-center">
+                            <a id="close" class="fa fa-times-circle-o fa-stack-2x" onclick="hideRegister()" style="cursor:pointer"></a>
+                            <h3>Dołącz do nas już teraz</h3>
+                            <form class="" method="post" action="#">
 
-        </div>
+                                <div class="form-group">
+                                    <label for="name" class="cols-sm-2 control-label">Imie</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Wpisz swoje imie" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="cols-sm-2 control-label">Adres email</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Wpisz swój email" data-rule="email" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="cols-sm-2 control-label">Hasło</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="password" class="form-control" name="password" id="password" placeholder="Wpisz hasło" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm" class="cols-sm-2 control-label">Powtórz hasło</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="password" class="form-control" name="confirm" id="confirm" placeholder="Wpisz hasło ponownie" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <h5 onclick="showLogin()" style="cursor:pointer" id="haveAccount">Masz konto? Zaloguj się!</h5>
+                                    <button href="" target="_blank" type="submit" id="button" class="btn btn-primary btn-lg btn-block login-button">Dołącz :]</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container modal" id="login">
+                <div class="row main">
+
+                    <div class="main-login main-center">
+                        <a id="close" class="fa fa-times-circle-o fa-stack-2x" onclick="hideLogin()" style="cursor:pointer"></a>
+                        <h3>Zaloguj się</h3>
+                        <form class="" method="post" action="#">
+
+                            <div class="form-group">
+                                <label for="email" class="cols-sm-2 control-label">Adres email</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Wpisz swój email" data-rule="email" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="cols-sm-2 control-label">Hasło</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="Wpisz hasło" required />
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <h5 onclick="showRegister()" style="cursor:pointer" id="noAccount">Nie masz konta? Zarejstruj się!</h5>
+                                <button href="" target="_blank" type="submit" id="button" class="btn btn-primary btn-lg btn-block login-button">Zaloguj</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+                <div id="opisHero">
+                    <h1>Witaj w aplikacji <font color="#2dc997"> LIFT IT</font></h1>
+                    <h2>Z nami zadbasz o własne ciało oraz zdrowie</h2>
+                    <a onclick="showLogin()" class="btn-get-started" style="cursor:pointer ">Rozpocznij :]</a>
+                </div>
+            </div>
     </section><!-- #hero -->
 
     @RenderBody()
@@ -100,6 +191,7 @@
         <script src="~/js/Index/wow.min.js" asp-append-version="true"></script>
         <script src="~/js/Index/fakeVisitCounter.min.js" asp-append-version="true"></script>
         <script src="~/js/Index/changeBack.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/hideShow.js"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
@@ -123,6 +215,7 @@
         <script src="~/js/Index/wow.min.js" asp-append-version="true"></script>
         <script src="~/js/Index/fakeVisitCounter.min.js" asp-append-version="true"></script>
         <script src="~/js/Index/changeBack.min.js" asp-append-version="true"></script>
+        <script src="~/js/Index/hideShow.js"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)
