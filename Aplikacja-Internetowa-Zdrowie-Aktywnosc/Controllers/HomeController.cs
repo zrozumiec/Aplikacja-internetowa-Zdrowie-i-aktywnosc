@@ -24,6 +24,13 @@ namespace Aplikacja_Internetowa_Zdrowie_Aktywnosc.Controllers
             return View();
         }
 
+        public IActionResult WyborKategorii()
+        {
+            ViewData["Message"] = "";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

@@ -55,11 +55,12 @@
     "../images/Index/Background/gym55.jpg"
 ]
 
-var imageHead = document.getElementById("hero");
-var i = 0;
 
+var i = 0;
+var imageHead = document.getElementById("hero");
 // here all images loaded, do your stuff
 setInterval(function () {
+    
     imageHead.style.backgroundImage = "url(" + images[i] + ")";
     //imageHead.style.backgroundImage = "url(" + images[Math.floor(Math.random() * 54) + 0] + ")";
     i = i + 1;
