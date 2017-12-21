@@ -19,4 +19,13 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\Trening\" />
+    <Folder Include="wwwroot\css\Obwody\" />
+    <Folder Include="wwwroot\css\Waga\" />
+    <Folder Include="wwwroot\js\Trening\" />
+    <Folder Include="wwwroot\js\Obwody\" />
+    <Folder Include="wwwroot\js\Waga\" />
+  </ItemGroup>
+
 </Project>
